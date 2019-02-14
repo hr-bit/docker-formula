@@ -12,6 +12,7 @@ docker-package-dependencies:
       {%- if grains['os_family']|lower == 'debian' %}
       - apt-transport-https
       - python-apt
+      - python3-docker
       {%- endif %}
       - iptables
       - ca-certificates
